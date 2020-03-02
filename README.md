@@ -1,5 +1,20 @@
 # Rate my Jedi
 
+## Get started with codesandbox 
+
+1. Sign up for codesandbox (optional) 
+2. Open the repo in codesandbox: https://codesandbox.io/s/github/Knowit-FRUX/jedi-rating
+3. Click save to Fork the code to your account. 
+
+## Get started with local development
+
+1. Clone or download the repo `git clone https://github.com/Knowit-FRUX/jedi-rating.git`
+2. Move to the new project directory `cd jedi-rating`
+3. Run `npm install` 
+4. Run `npm start` to start development server and then open `http://localhost:3000` in your browser.
+
+---
+
 ## Functions in javascript 
 
 ### Function declarations
