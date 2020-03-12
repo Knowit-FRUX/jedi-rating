@@ -62,9 +62,35 @@ document.addEventListener("click", function handleClickEvent(event) {
 
 ## Array functions 
 
-### map
+### Array.map
+
+Returnerar en ny list efter en callback funktion på varje object i listan.
+
+```javascript
+function toUpper(string) {
+    return string.toUpperCase();
+}
+["hello", "world].map(toUpper) // ["HELLO", "WORLD"]
+```
+
+Array.map() används ofta i react för att returnera JSX/HTML element. 
+
+```javascript
+const list = [{name: "Luke"}, {name: "Leia"}, {name: "Yoda"}];
+<ul>
+    {list.map(item => <li>{item.name}</li>)}
+</ul>
+```
 
 ### filter
+
+Returnerar en nya lista efter en callback som antingen exkluderar eller inkluderar objektet baserat på om callback funktionen returnerar `true` eller `false`.
+
+```
+const list = [-1, 0, 1, 2, 3, 4, 5];
+const moreThanZero = list.filter(number => number > 0); // [1, 2, 3, 4, 5]
+```
+
 
 ### find 
 
