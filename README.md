@@ -41,7 +41,7 @@ const hello = (what = "world") => `Hello ${what}!`;
 
 Praktiskt som callbacks. Namnge gärna för enklare debugging.
 
-```
+```javascript
 document.addEventListener("click", function handleClickEvent(event) {
     console.log(event.target);
 });
@@ -70,7 +70,7 @@ Returnerar en ny list efter en callback funktion på varje object i listan.
 function toUpper(string) {
     return string.toUpperCase();
 }
-["hello", "world].map(toUpper) // ["HELLO", "WORLD"]
+["hello", "world"].map(toUpper) // ["HELLO", "WORLD"]
 ```
 
 Array.map() används ofta i react för att returnera JSX/HTML element. 
@@ -86,7 +86,7 @@ const list = [{name: "Luke"}, {name: "Leia"}, {name: "Yoda"}];
 
 Returnerar en nya lista efter en callback som antingen exkluderar eller inkluderar objektet baserat på om callback funktionen returnerar `true` eller `false`.
 
-```
+```javascript
 const list = [-1, 0, 1, 2, 3, 4, 5];
 const moreThanZero = list.filter(number => number > 0); // [1, 2, 3, 4, 5]
 ```
